@@ -1,0 +1,57 @@
+How do i Setup the Main File?
+
+These are usually always the first lines of the main file
+
+package de.syntaxjava.main;  -- Describes the path of the Main.java
+
+import org.bukkit.plugin.java.JavaPlugin;  -- Import Minecraft Java
+
+public final class Main extends JavaPlugin {  -- Now Start with the Main Code ->
+
+
+
+    @Override
+    public void onEnable() {     
+                                        -- This was written here between the { } happens when 
+                                        the plugin is started. for example "System.out.println("Hello World!")" and then 
+     }                                  "Hello World!" is sent in the console of the server when the plugin gets started.
+
+   
+    
+    
+    
+   
+   @Override                       
+   public void onDisable() {
+                                      -- onDisable is basically exactly the same, only what is 
+                                      written between the {} only happens if the 
+     }                                plugin gets deactivated.
+   
+
+
+
+} -- This is the closing bracket from the (public final class Main extends JavaPlugin) line above.
+
+
+
+Now you have a working main file! Great! 
+Here you have summarized the whole main file:
+
+
+package de.syntaxjava.main;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+public final class Main extends JavaPlugin {
+
+    @Override
+    public void onEnable() {
+        System.out.println("Hello World!");
+
+    }
+
+    @Override
+    public void onDisable() {
+        System.out.println("Bye World!");
+    }
+}
