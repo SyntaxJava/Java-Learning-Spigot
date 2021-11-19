@@ -1,3 +1,5 @@
+
+
 How do i Setup the Main File?
 
 These are usually always the first lines of the main file
@@ -55,3 +57,5 @@ public final class Main extends JavaPlugin {
         System.out.println("Bye World!");
     }
 }
+
+
